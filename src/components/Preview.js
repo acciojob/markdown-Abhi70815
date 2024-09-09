@@ -2,7 +2,9 @@ import React from 'react'
 
 const Preview = ({markedText}) => {
   return (
-    <h1 className='preview'>{markedText}</h1>
+    <div className='preview'>
+      <h1 >{markedText}</h1>
+    </div>
   )
 }
 
