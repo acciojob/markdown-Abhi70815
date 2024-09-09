@@ -10,3 +10,20 @@ button{
     justify-content: center;
     align-items: center;
 }
+.app{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.textarea,.preview{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    background-color: rgba(204, 211, 219, 0.555);
+    padding: 30px;
+}
+
+.preview{
+}
