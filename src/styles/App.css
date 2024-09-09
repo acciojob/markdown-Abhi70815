@@ -14,5 +14,6 @@
     padding: 30px;
 }
 
-.preview{
+#heading{
+    font-weight: bold;
 }
