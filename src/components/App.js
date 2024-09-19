@@ -5,10 +5,10 @@ import '../styles/App.css'
 
 
 const App = () => {
-  const [markedText, setMarkedText] = useState("");
+  const [markedText, setMarkedText] = useState("Heading");
   return (
     <div className='app'>
-    <h1>Heading</h1>
+    {/* <h1>Heading</h1> */}
       <MarkdownApp setMarkedText={setMarkedText}/>
       <Preview markedText={markedText}/>
     </div>
