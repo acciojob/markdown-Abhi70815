@@ -3,7 +3,7 @@ import React from 'react'
 const Preview = ({markedText}) => {
   return (
     <div className='preview'>
-      <h1>{markedText}</h1>
+      <h1>Heading <br/> {markedText}</h1>
     </div>
   )
 }

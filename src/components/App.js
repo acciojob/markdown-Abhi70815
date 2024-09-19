@@ -5,7 +5,7 @@ import '../styles/App.css'
 
 
 const App = () => {
-  const [markedText, setMarkedText] = useState("Heading");
+  const [markedText, setMarkedText] = useState("");
   return (
     <div className='app'>
     {/* <h1>Heading</h1> */}
