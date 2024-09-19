@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-import { DataContext } from './App'
-const Preview = () => {
-const data= useContext(DataContext);
+import React from 'react'
+
+const Preview = ({markedText}) => {
   return (
     <div className='preview'>
-      <h1 id='Heading'>{data.markedText}</h1>
+      <h1 id='Heading'>{markedText}</h1>
     </div>
   )
 }

@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-import {DataContext} from './App'
-const MarkdownApp = ()=> {
- const data= useContext(DataContext)
- console.log(data)
+import React from 'react'
+
+const MarkdownApp = ({setMarkedText})=> {
+ 
   return (
-    <textarea rows={24} cols={50}  className='textarea' onChange={(e)=>data.setMarkedText(e.target.value)}></textarea>
+    <textarea rows={24} cols={50} onChange={(e)=>setMarkedText(e.target.value)} className='textarea'></textarea>
   )
 }
 

@@ -1,21 +1,17 @@
-import React, { createContext, useState } from 'react'
+import React, { useState } from 'react'
 import MarkdownApp from './MarkdownApp'
 import Preview from './Preview';
 import '../styles/App.css'
 
 
-export const DataContext = createContext();
-
 const App = () => {
- const [markedText , setMarkedText]= useState('');
+  const [markedText, setMarkedText] = useState("");
   return (
-    <DataContext.Provider value={{markedText, setMarkedText}}>
-
     <div className='app'>
-      <MarkdownApp/>
-      <Preview />
+    <h1>Heading</h1>
+      <MarkdownApp setMarkedText={setMarkedText}/>
+      <Preview markedText={markedText}/>
     </div>
-    </DataContext.Provider>
   )
 }
 
